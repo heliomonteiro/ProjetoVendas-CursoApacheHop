@@ -13,64 +13,24 @@
     <transform_performance_capturing_delay>1000</transform_performance_capturing_delay>
     <transform_performance_capturing_size_limit>100</transform_performance_capturing_size_limit>
     <created_user>-</created_user>
-    <created_date>2025/12/18 21:13:02.844</created_date>
+    <created_date>2025/12/17 13:37:57.462</created_date>
     <modified_user>-</modified_user>
-    <modified_date>2025/12/18 21:13:02.844</modified_date>
+    <modified_date>2025/12/17 13:37:57.462</modified_date>
   </info>
   <notepads>
   </notepads>
   <order>
     <hop>
-      <from>Meta Data</from>
-      <to>STAGE - Categorias</to>
+      <from>ORIGEM - Categorias</from>
+      <to>Select values</to>
       <enabled>Y</enabled>
     </hop>
     <hop>
-      <from>ORIGEM - Categorias</from>
-      <to>Meta Data</to>
+      <from>Select values</from>
+      <to>STAGE - Categorias</to>
       <enabled>Y</enabled>
     </hop>
   </order>
-  <transform>
-    <name>Meta Data</name>
-    <type>SelectValues</type>
-    <description/>
-    <distribute>Y</distribute>
-    <custom_distribution/>
-    <copies>1</copies>
-    <partitioning>
-      <method>none</method>
-      <schema_name/>
-    </partitioning>
-    <fields>
-      <meta>
-        <date_format_lenient>N</date_format_lenient>
-        <length>9</length>
-        <lenient_string_to_number>N</lenient_string_to_number>
-        <name>IdCategoria</name>
-        <precision>0</precision>
-        <rename>IdCategoria</rename>
-        <storage_type/>
-        <type>Integer</type>
-      </meta>
-      <meta>
-        <date_format_lenient>N</date_format_lenient>
-        <length>50</length>
-        <lenient_string_to_number>N</lenient_string_to_number>
-        <name>Categoria</name>
-        <precision>-2</precision>
-        <rename>Categoria</rename>
-        <storage_type/>
-        <type>String</type>
-      </meta>
-      <select_unspecified>N</select_unspecified>
-    </fields>
-    <attributes/>
-    <GUI>
-      <xloc>400</xloc>
-      <yloc>96</yloc>
-    </GUI>
-  </transform>
   <transform>
     <name>ORIGEM - Categorias</name>
     <type>TableInput</type>
@@ -93,8 +53,8 @@ FROM "public"."categorias"
     <variables_active>N</variables_active>
     <attributes/>
     <GUI>
-      <xloc>224</xloc>
-      <yloc>96</yloc>
+      <xloc>608</xloc>
+      <yloc>272</yloc>
     </GUI>
   </transform>
   <transform>
@@ -121,19 +81,64 @@ FROM "public"."categorias"
     <only_when_have_rows>N</only_when_have_rows>
     <partitioning_daily>N</partitioning_daily>
     <partitioning_enabled>N</partitioning_enabled>
+    <partitioning_field/>
     <partitioning_monthly>Y</partitioning_monthly>
+    <return_field/>
     <return_keys>N</return_keys>
     <schema>dbo</schema>
     <specify_fields>N</specify_fields>
     <table>tb_categorias</table>
+    <tablename_field/>
     <tablename_in_field>N</tablename_in_field>
     <tablename_in_table>Y</tablename_in_table>
     <truncate>Y</truncate>
     <use_batch>Y</use_batch>
     <attributes/>
     <GUI>
-      <xloc>544</xloc>
-      <yloc>96</yloc>
+      <xloc>1104</xloc>
+      <yloc>272</yloc>
+    </GUI>
+  </transform>
+  <transform>
+    <name>Select values</name>
+    <type>SelectValues</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <fields>
+      <meta>
+        <date_format_lenient>N</date_format_lenient>
+        <length>9</length>
+        <lenient_string_to_number>N</lenient_string_to_number>
+        <name>IdCategoria</name>
+        <precision>0</precision>
+        <rename>IdCategoria</rename>
+        <roundingType>half_even</roundingType>
+        <storage_type/>
+        <type>Integer</type>
+      </meta>
+      <meta>
+        <date_format_lenient>N</date_format_lenient>
+        <length>50</length>
+        <lenient_string_to_number>N</lenient_string_to_number>
+        <name>Categoria</name>
+        <precision>-2</precision>
+        <rename>Categoria</rename>
+        <roundingType>half_even</roundingType>
+        <storage_type/>
+        <type>String</type>
+      </meta>
+      <select_unspecified>N</select_unspecified>
+    </fields>
+    <attributes/>
+    <GUI>
+      <xloc>848</xloc>
+      <yloc>272</yloc>
     </GUI>
   </transform>
   <transform_error_handling>

@@ -1,5 +1,4 @@
 {
-  "virtualPath": "",
   "rdbms": {
     "MSSQLNATIVE": {
       "databaseName": "stage",
