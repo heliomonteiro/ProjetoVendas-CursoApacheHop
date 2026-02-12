@@ -114,14 +114,7 @@ FROM "public"."devolucoes"
     </partitioning>
     <fields>
       <meta>
-        <conversion_mask/>
-        <currency_symbol/>
         <date_format_lenient>N</date_format_lenient>
-        <date_format_locale/>
-        <date_format_timezone/>
-        <decimal_symbol/>
-        <encoding/>
-        <grouping_symbol/>
         <length>50</length>
         <lenient_string_to_number>N</lenient_string_to_number>
         <name>DataDevolucao</name>
@@ -132,14 +125,7 @@ FROM "public"."devolucoes"
         <type>String</type>
       </meta>
       <meta>
-        <conversion_mask/>
-        <currency_symbol/>
         <date_format_lenient>N</date_format_lenient>
-        <date_format_locale/>
-        <date_format_timezone/>
-        <decimal_symbol/>
-        <encoding/>
-        <grouping_symbol/>
         <length>9</length>
         <lenient_string_to_number>N</lenient_string_to_number>
         <name>Id_Territorio</name>
@@ -150,14 +136,7 @@ FROM "public"."devolucoes"
         <type>Integer</type>
       </meta>
       <meta>
-        <conversion_mask/>
-        <currency_symbol/>
         <date_format_lenient>N</date_format_lenient>
-        <date_format_locale/>
-        <date_format_timezone/>
-        <decimal_symbol/>
-        <encoding/>
-        <grouping_symbol/>
         <length>9</length>
         <lenient_string_to_number>N</lenient_string_to_number>
         <name>Id_Produto</name>
@@ -168,14 +147,7 @@ FROM "public"."devolucoes"
         <type>Integer</type>
       </meta>
       <meta>
-        <conversion_mask/>
-        <currency_symbol/>
         <date_format_lenient>N</date_format_lenient>
-        <date_format_locale/>
-        <date_format_timezone/>
-        <decimal_symbol/>
-        <encoding/>
-        <grouping_symbol/>
         <length>9</length>
         <lenient_string_to_number>N</lenient_string_to_number>
         <name>QuantidadeDevolucoes</name>
